@@ -51,7 +51,7 @@ ssh [Docker host ip] -p 2222
 
 ログイン後、flyコンテナからAPIを実行する場合、以下のようにURLにwebコンテナのnameの「concoursebuilder_concourse-web_1」を使用してConcourse CIにログインできます。
 
-- user: `concours`
+- user: `concourse`
 - pass: `p@ssw0rd`
 
 ```
