@@ -39,3 +39,4 @@ services:
   fly:
     build: ./fly
     links: [concourse-web]
+    ports: ["2222:22"]
