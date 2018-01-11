@@ -39,6 +39,7 @@ concoursebuilder_concourse-db_1
 
 
 CLIツールがインストールされているflyコンテナにはSSHで入れます(Dockerのホストマシンの2222番ポートに割り当てています)。
+パスワードは'p@ssw0rd'です。
 
 ```
 # Dockerホスト内部から
@@ -50,9 +51,13 @@ ssh [Docker host ip] -p 2222
 
 ログイン後、flyコンテナからAPIを実行する場合、以下のようにURLにwebコンテナのnameの「concoursebuilder_concourse-web_1」を使用してConcourse CIにログインできます。
 
+- user: `concours`
+- pass: `p@ssw0rd`
 
 ```
 # Concourse CIにログイン 
 fly -t concourseci login -c http://concoursebuilder_web_1:8080
 ```
+
+
 
