@@ -1,0 +1,17 @@
+resources:
+- name: every-1m
+  type: time
+  source: {interval: 1m}
+
+jobs:
+- name: navi
+  plan:
+  - get: every-1m
+    trigger: true
+  - task: say-hello
+    config:
+      platform: darwin
+      run:
+        path: echo
+        args: ["Hello, world!"]
+

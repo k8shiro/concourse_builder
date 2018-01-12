@@ -40,3 +40,4 @@ services:
     build: ./fly
     links: [concourse-web]
     ports: ["2222:22"]
+    volumes: ["./pipeline:/etc/concourse/pipeline"]
